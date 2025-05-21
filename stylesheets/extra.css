@@ -1,0 +1,305 @@
+/* 動画用（すでに追加済み） */
+/* === 動画埋め込み（iframe）用スタイル === */
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+/* === 動画埋め込み（iframe）用スタイル === */
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* === キャプション付き動画 === */
+.video-with-caption {
+  text-align: center;
+  margin: 1.5em auto;
+  max-width: 640px;
+}
+
+/* === キャプション付き動画 === */
+.video-with-caption .caption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.5em;
+  line-height: 1.5;
+}
+
+/* 画像用：右寄せ・角丸・影付き */
+/* === 右寄せ画像（角丸＋影） === */
+.float-right-img {
+  float: right;
+  width: 250px;
+  margin: 0 0 1em 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 画像用：中央寄せ＋影 */
+/* === 中央寄せ画像（影付き） === */
+.centered-img {
+  display: block;
+  margin: 1em auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-with-caption {
+  display: inline-block;
+  text-align: center;
+  margin: 1em auto;
+  width: 250px;
+}
+
+.image-with-caption img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.image-with-caption .caption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5em;
+  line-height: 1.4;
+}
+
+/* === 横並び画像＋テキストキャプション === */
+.image-caption-side {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1em 0;
+  max-width: 100%;
+}
+
+/* === 横並び画像＋テキストキャプション === */
+.image-caption-side img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* === 横並び画像＋テキストキャプション === */
+.image-caption-side .caption {
+  font-size: 0.7rem;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* === 各種Webフォント切り替えクラス === */
+.font-mplus {
+  font-family: 'M PLUS 1p', sans-serif !important;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.font-ibmplex {
+  font-family: 'IBM Plex Sans JP', sans-serif !important;
+}
+
+.font-kosugi {
+  font-family: 'Kosugi Maru', sans-serif !important;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* === Swiperスライド用スタイル（動画横スライド） === */
+.swiper-container {
+  width: 100%;
+  max-width: 740px;
+  margin: 1.5em auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.swiper-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.swiper-indicator {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.3em;
+  opacity: 0.8;
+  user-select: none;
+}
+
+.swiper-dots {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* === 横並び動画＋キャプション（flex wrap対応） === */
+.video-caption-side {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 1.5em 0;
+  flex-wrap: wrap;
+}
+
+/* === 横並び動画＋キャプション（flex wrap対応） === */
+.video-caption-side .caption {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 360px;
+  flex: 1;
+}
+
+/* === 横並び動画＋キャプション（flex wrap対応） === */
+.video-caption-side video {
+  flex: 1;
+  max-width: 360px;
+  height: auto;
+  border: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+/* 箇条書き記号のカスタムスタイル */
+.bullet-circle {
+  list-style-type: circle !important;
+  padding-left: 1.2em;
+}
+
+.bullet-disc {
+  list-style-type: disc !important;
+  padding-left: 1.2em;
+}
+
+.bullet-disc li::marker {
+  font-size: 0.7em;
+  color: #333;
+}
+
+.bullet-square {
+  list-style-type: square !important;
+  padding-left: 1.2em;
+}
+.bullet-decimal {
+  list-style-type: decimal !important;
+  padding-left: 1.2em;
+}
+.bullet-lower-alpha {
+  list-style-type: lower-alpha !important;
+  padding-left: 1.2em;
+}
+
+/* === ジェイミー0杯時 行動例（小さい文字）対応 === */
+.caption.switchable-font ul {
+  font-size: 0.65rem;
+}
+
+.video-caption-duo {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+  .video-caption-duo {
+    flex-wrap: wrap;
+  }
+}
+
+.indent-block {
+  margin-top: 2em;
+  margin-bottom: 5em;
+  margin-left: 1.5em; /* ← これで左のインデントを保つ */
+}
+
+.indent-deep-block {
+  margin-left: 3.0em;
+  padding: 0.5em 0;
+  font-size: 0.75rem;
+  line-height: 2.0;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.command {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 0.75rem;         /* 小さめに */
+  font-weight: normal;       /* 太字なし */
+  color: #333;               /* やや控えめな文字色 */
+  white-space: nowrap;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 64px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  padding: 0.5em 1em;
+  z-index: 1; /* ← ここを明確に低くするのがポイント */
+
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  border-bottom: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* タイトル＋説明文の2段構成キャプション用（インデント付き） */
+.styled-caption .caption-title {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 1.0em;
+  margin-left: 1.5em;   /* タイトル用インデント */
+  color: #222;
+}
+
+.styled-caption .caption-body {
+  font-size: 0.75rem;
+  margin-left: 3.0em;   /* 説明文用インデント（さらに深く） */
+  color: #444;
+  line-height: 1.6;
+}
+
